@@ -77,10 +77,6 @@ class Result {
         int min = Math.min(matrix.size(), matrix.get(0).size());
         int[][] arr = Result.convert(matrix);
 
-        // int rows = arr.length;
-        // int cols = arr[0].length;
-        // int cells = (2*rows) + (2*cols) - (8*offset) - 4;
-
         for (int offset = 0; offset < min/2; offset++) {
             arr = Result.rotate(arr, offset, r);
         }
